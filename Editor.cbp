@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Editor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Editor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="text.txt" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-m32" />
+		</Compiler>
+		<Linker>
+			<Add library="gdi32" />
+			<Add library="user32" />
+			<Add library="kernel32" />
+			<Add library="comctl32" />
+			<Add library="libcomdlg32.a" />
+			<Add option="-m32" />
+		</Linker>
+		<Unit filename="Caret.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Caret.h" />
+		<Unit filename="Editor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Editor.h" />
+		<Unit filename="EditorMenu.h" />
+		<Unit filename="EditorMenu.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="Manager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Manager.h" />
+		<Unit filename="OutputData.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="OutputData.h" />
+		<Unit filename="Scroll.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Scroll.h" />
+		<Unit filename="Text.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Text.h" />
+		<Unit filename="Viewer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Viewer.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,15 @@
+#include "EditorMenu.h"
+
+EditorMenu MENU
+ {
+    POPUP "File"
+    {
+        MENUITEM "Open...",     IDM_OPEN
+        MENUITEM "Close",       IDM_CLOSE
+        MENUITEM "Exit",        IDM_EXIT
+    }
+    POPUP "View"
+    {
+        MENUITEM "Change Mode", IDM_CHANDEMO
+    }
+ }
